@@ -42,6 +42,11 @@ public class Hangout {
 	    return $wnd.gapi.hangout.getLocale();
 	  }-*/;
 	 
+	 public static native String getStartData() /*-{
+	    return $wnd.gapi.hangout.getStartData();
+	  }-*/;
+	 
+	 
 	 public static native Participant getParticipantById(String id) /*-{
 	    return $wnd.gapi.hangout.getParticipantById(id);
 	  }-*/;
@@ -77,34 +82,8 @@ public class Hangout {
 	  }-*/;
 	 
 
-	 
-
-	 
-
-	 
-	 //TODO move
-	 public static native boolean hasNotice() /*-{
-	    return $wnd.gapi.hangout.hasNotice();
+	 public static native void isPublic() /*-{
+	    return $wnd.gapi.hangout.isPublic();
 	  }-*/;
 	 
-	 public static native void displayNotice(String message,boolean opt_permanent) /*-{
-	    return $wnd.gapi.hangout.displayNotice(message,opt_permanent);
-	  }-*/;
-	 public static native void dismissNotice() /*-{
-	    return $wnd.gapi.hangout.dismissNotice();
-	  }-*/;
-	 
-	 public static native String getActiveSpeaker() /*-{
-	    return $wnd.gapi.hangout.getActiveSpeaker();
-	  }-*/;
-	 
-	 public static native void setActiveSpeaker(String id) /*-{
-	    return $wnd.gapi.hangout.setActiveSpeaker(id);
-	  }-*/;
-	 
-	 public static native void clearActiveSpeaker() /*-{
-	    $wnd.gapi.hangout.clearActiveSpeaker();
-	  }-*/;
-	 
-
 }

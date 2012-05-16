@@ -1,6 +1,6 @@
 package com.akjava.gwt.lib.hangouts.client.av.effects;
 
-import com.akjava.gwt.lib.hangouts.client.av.effects.ImageResourceParameter.Offset;
+import com.akjava.gwt.lib.hangouts.client.XYPoint;
 import com.google.gwt.core.client.JavaScriptObject;
 
 public class FaceTrackingOverlay  extends JavaScriptObject {
@@ -10,7 +10,7 @@ public final native ImageResource getImageResource() /*-{
 return this.getImageResource();
 }-*/;
 
-public final native Offset getOffset() /*-{
+public final native XYPoint getOffset() /*-{
 return this.getOffset();
 }-*/;
 

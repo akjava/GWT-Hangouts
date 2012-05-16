@@ -22,7 +22,7 @@
         	</classpath>
         </javac>
     	<copydir dest="tmp" src="src"></copydir>
-    	<jar destfile="built/akjava_gwt_hangouts1.0.jar" basedir="tmp"/>
+    	<jar destfile="built/akjava_gwt_hangouts.jar" basedir="tmp"/>
     	<delete dir="tmp"></delete>
     </target>
 

@@ -9,17 +9,21 @@ public final native String getUrl() /*-{
 return this.getUrl();
 }-*/;
 
-public final native FaceTrackingOverlay createFaceTrackingOverlay(ImageResourceParameter param) /*-{
+public final native FaceTrackingOverlay createFaceTrackingOverlay(FaceTrackingOverlayParameter param) /*-{
 return this.createFaceTrackingOverlay(param);
 }-*/;
 
-public final native FaceTrackingOverlay showFaceTrackingOverlay(ImageResourceParameter param) /*-{
+public final native FaceTrackingOverlay showFaceTrackingOverlay(FaceTrackingOverlayParameter param) /*-{
 return this.showFaceTrackingOverlay(param);
 }-*/;
 
-public static ImageResourceParameter params(){
-	ImageResourceParameter param=(ImageResourceParameter) ImageResourceParameter.createObject();
-	return param;
-}
+public final native Overlay createOverlay(OverlayParameter param) /*-{
+return this.createOverlay(param);
+}-*/;
+
+public final native Overlay showOverlay(OverlayParameter param) /*-{
+return this.showOverlay(param);
+}-*/;
+
 
 }

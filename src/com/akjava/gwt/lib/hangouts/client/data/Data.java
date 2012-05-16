@@ -32,6 +32,10 @@ public class Data {
     return $wnd.gapi.hangout.data.setValue(key,value);
   	}-*/;
 	
+	public static final native void sendMessage(String message) /*-{
+    $wnd.gapi.hangout.data.sendMessage(message);
+  	}-*/;
+	
 	public static final native void submitDelta(StringMap updates) /*-{
     $wnd.gapi.hangout.data.submitDelta(updates);
   	}-*/;
