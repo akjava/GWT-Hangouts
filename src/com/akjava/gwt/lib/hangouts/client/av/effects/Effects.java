@@ -13,7 +13,7 @@ public class Effects {
 	}-*/;
 
 	public static class FaceTrackingFeature {
-		public static final String LEFT_EYE = "left_eye";
+		public static final String LEFT_EYE = "left_eye_center";
 		public static final String LEFT_EYEBROW_LEFT = "left_eyebrow_left";
 		public static final String LEFT_EYEBROW_RIGHT = "left_eyebrow_right";
 		public static final String LOWER_LIP = "lip_lower";
@@ -22,7 +22,7 @@ public class Effects {
 		public static final String MOUTH_RIGHT = "mouth_right";
 		public static final String NOSE_ROOT = "nose_root";
 		public static final String NOSE_TIP = "nose_tip";
-		public static final String RIGHT_EYE = "right_eye";
+		public static final String RIGHT_EYE = "right_eye_center";
 		public static final String RIGHT_EYEBROW_LEFT = "right_eyebrow_left";
 		public static final String RIGHT_EYEBROW_RIGHT = "right_eyebrow_right";
 		public static final String UPPER_LIP = "lip_upper";
