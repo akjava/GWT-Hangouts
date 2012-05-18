@@ -58,6 +58,6 @@ this.setTrackingFeature(value);
 }-*/;
 
 public final native void setVisible(boolean visible) /*-{
-this.visible=visible;
+this.setVisible(visible);
 }-*/;
 }
