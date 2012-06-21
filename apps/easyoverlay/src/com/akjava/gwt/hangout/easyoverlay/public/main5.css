@@ -1,0 +1,25 @@
+.title {
+  font-size:large;
+  color:#ff0000;
+}
+
+.nomargin {
+margin: 0px;
+padding: 0px;
+}
+.transparent_bg{
+margin: 0px;
+padding: 0px;	
+background-image: url("http://www.xucker.jpn.org/test/resources/transparent_bg.png");
+background-repeat: repeat;
+}
+
+.marginbotton{
+	margin: 0px 0px 8px 0px;
+	padding:0px 0px 8px 0px;
+}
+
+.gwt-TabPanelBottom{
+	margin:0px;
+	padding:0px;
+}
