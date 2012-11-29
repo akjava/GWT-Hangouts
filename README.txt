@@ -8,3 +8,10 @@ Japanese and English mixed.
 
 any question or bugs please use issue
 https://github.com/akjava/GWT-Hangouts/issues
+
+Licensing
+Unless otherwise stated, all source files are licensed under the Apache License, Version 2.0
+http://www.apache.org/licenses/LICENSE-2.0
+
+GWT wrapper for Hangout API
+Copyright (C) 2011 aki miyazaki(akimisaki3@gmail.com)
