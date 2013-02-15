@@ -38,9 +38,20 @@ public class Hangout {
 	    return $wnd.gapi.hangout.getHangoutId();
 	  }-*/;
 	 
+	 /**
+	  * @deprecated use getLocalParticipantLocale
+	  * @return
+	  */
 	 public static native String getLocale() /*-{
 	    return $wnd.gapi.hangout.getLocale();
 	  }-*/;
+	 public static native String getLocalParticipantLocale() /*-{
+	    return $wnd.gapi.hangout.getLocalParticipantLocale();
+	  }-*/;
+	 public static native String getPreferredLocale() /*-{
+	    return $wnd.gapi.hangout.getPreferredLocale();
+	  }-*/;
+	 
 	 
 	 public static native String getStartData() /*-{
 	    return $wnd.gapi.hangout.getStartData();
@@ -51,8 +62,18 @@ public class Hangout {
 	    return $wnd.gapi.hangout.getParticipantById(id);
 	  }-*/;
 	 
+	 /**
+	  * @deprecated
+	  * @return
+	  */
 	 public static native String getParticipantId() /*-{
 	    return $wnd.gapi.hangout.getParticipantId();
+	  }-*/;
+	 public static native Participant getLocalParticipant() /*-{
+	    return $wnd.gapi.hangout.getLocalParticipant();
+	  }-*/;
+	 public static native String getLocalParticipantId() /*-{
+	    return $wnd.gapi.hangout.getLocalParticipantId();
 	  }-*/;
 	 
 	 public static native JsArray<Participant> getParticipants() /*-{
@@ -68,6 +89,9 @@ public class Hangout {
 		 return lists;
 	 }
 	 
+	 public static native String getTopic() /*-{
+	    return $wnd.gapi.hangout.getTopic();
+	  }-*/;
 
 	 public static native void hideApp() /*-{
 	    return $wnd.gapi.hangout.hideApp();
