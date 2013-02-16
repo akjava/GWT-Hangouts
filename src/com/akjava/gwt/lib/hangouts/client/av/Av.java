@@ -60,6 +60,10 @@ public class Av {
     return $wnd.gapi.hangout.av.hasSpeakers();
     }-*/;
 
+	public static final native boolean isLocalParticipantVideoMirrored() /*-{
+    return $wnd.gapi.hangout.av.isLocalParticipantVideoMirrored();
+    }-*/;
+	
 	public static final native boolean isParticipantAudible(String participantId) /*-{
     return $wnd.gapi.hangout.av.isParticipantAudible(participantId);
     }-*/;
@@ -69,9 +73,21 @@ public class Av {
     }-*/;
 
 	
+	public static final native void muteParticipantMicrophone(String participantId) /*-{
+    return $wnd.gapi.hangout.av.muteParticipantMicrophone(participantId);
+    }-*/;
+	
+	/**
+	 * @deprecated
+	 * @param participantId
+	 */
 	public static final native void requestParticipantMicrophoneMute(String participantId) /*-{
     return $wnd.gapi.hangout.av.requestParticipantMicrophoneMute(participantId);
     }-*/;
+	
+	public static final native void setLocalParticipantVideoMirrored(boolean mirrored) /*-{
+    $wnd.gapi.hangout.av.setLocalParticipantVideoMirrored(mirrored);
+   }-*/;
 	
 	public static final native void setParticipantAudioLevel(String participantId,JsArrayNumber values) /*-{
     return $wnd.gapi.hangout.av.setParticipantAudioLevel(participantId,values);
