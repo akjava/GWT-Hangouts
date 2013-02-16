@@ -6,6 +6,10 @@ import com.google.gwt.core.client.JavaScriptObject;
 public class Overlay  extends JavaScriptObject {
 protected Overlay(){}
 
+public final native void dispose() /*-{
+this.dispose();
+}-*/;
+
 public final native ImageResource getImageResource() /*-{
 return this.getImageResource();
 }-*/;
@@ -22,6 +26,10 @@ return this.getRotation();
 
 public final native OverlayScale getScale() /*-{
 return this.getScale();
+}-*/;
+
+public final native boolean isDisposed() /*-{
+return this.isDisposed();
 }-*/;
 
 public final native boolean isVisible() /*-{

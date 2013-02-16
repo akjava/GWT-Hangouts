@@ -6,6 +6,10 @@ import com.google.gwt.core.client.JavaScriptObject;
 public class FaceTrackingOverlay  extends JavaScriptObject {
 protected FaceTrackingOverlay(){}
 
+public final native void dispose() /*-{
+this.dispose();
+}-*/;
+
 public final native ImageResource getImageResource() /*-{
 return this.getImageResource();
 }-*/;
@@ -14,9 +18,6 @@ public final native XYPoint getOffset() /*-{
 return this.getOffset();
 }-*/;
 
-
-
-
 public final native boolean getRotateWithFace() /*-{
 return this.getRotateWithFace();
 }-*/;
@@ -24,19 +25,27 @@ return this.getRotateWithFace();
 public final native double getRotation() /*-{
 return this.getRotation();
 }-*/;
+
 public final native double getScale() /*-{
 return this.getScale();
 }-*/;
+
 public final native boolean getScaleWithFace() /*-{
 return this.getScaleWithFace();
 }-*/;
+
 public final native String getTrackingFeature() /*-{
 return this.getTrackingFeature();
 }-*/;
+
+public final native boolean isDisposed() /*-{
+return this.isDisposed();
+}-*/;
+
+
 public final native boolean isVisible() /*-{
 return this.isVisible();
 }-*/;
-
 
 public final native void setOffset(double x,double y) /*-{
 this.setOffset(x,y);

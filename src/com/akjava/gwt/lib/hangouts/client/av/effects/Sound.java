@@ -13,6 +13,19 @@ public final native double getVolume() /*-{
 return this.getVolume();
 }-*/;
 
+public final native void dispose() /*-{
+this.dispose();
+}-*/;
+
+public final native boolean isDisposed() /*-{
+return this.isDisposed();
+}-*/;
+
+
+public final native boolean isLocalOnly() /*-{
+return this.isLocalOnly();
+}-*/;
+
 public final native boolean isLooped() /*-{
 return this.isLooped();
 }-*/;

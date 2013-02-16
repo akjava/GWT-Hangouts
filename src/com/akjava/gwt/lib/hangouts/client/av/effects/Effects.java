@@ -29,8 +29,17 @@ public class Effects {
 
 	}
 
+	//TODO check values
+	public static class ResourceState {
+		public static final String DISPOSED = "disposed";
+		public static final String ERROR = "error";
+		public static final String LOADING = "loading";
+		public static final String LOADED = "loaded";
+	}
+	
 	public static class ScaleReference {
 		public static final String HEIGHT = "frame_height";
 		public static final String WIDTH = "frame_width";
 	}
+	
 }

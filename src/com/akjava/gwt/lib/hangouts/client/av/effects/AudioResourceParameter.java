@@ -15,6 +15,15 @@ public class AudioResourceParameter extends JavaScriptObject{
 		return this;
 	}
 	
+	public final AudioResourceParameter localOnly(boolean localOnly){
+		this.setLocalOnly(localOnly);
+		return this;
+	}
+	
+	private final native void setLocalOnly(boolean localOnly) /*-{
+	this.localOnly=localOnly;
+	}-*/;
+	
 	private final native void setLoop(boolean loop) /*-{
 	this.loop=loop;
 	}-*/;
