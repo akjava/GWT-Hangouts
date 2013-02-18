@@ -29,12 +29,12 @@ public class Effects {
 
 	}
 
-	//TODO check values
+	//1.3 values
 	public static class ResourceState {
-		public static final String DISPOSED = "disposed";
-		public static final String ERROR = "error";
-		public static final String LOADING = "loading";
-		public static final String LOADED = "loaded";
+		public static final String DISPOSED = "a";
+		public static final String ERROR = "b";
+		public static final String LOADING = "c";
+		public static final String LOADED = "d";
 	}
 	
 	public static class ScaleReference {
